@@ -12,7 +12,8 @@ module.exports = function(grunt){
 
     dev: {
       options: {
-        style: 'expanded'
+        style: 'expanded',
+        noCache: false
       },
       files: {
         'assets/css/main.css': 'assets/sass/main.sass'
