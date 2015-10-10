@@ -4,22 +4,23 @@ layout: default
 
 <div class="home">
     <article id="work">
-        <h1 class="page-heading">Trabalhos</h1>
+        <h3>Trabalhos</h3>
         <ul class="post-list">
             {% for post in site.categories.portfolio %}
-            <li>
+            <article>
                 <h3>
           <a class="post-link" href="{{ post.urlWork }}" title="Clique para abrir o trabalho  &ldquo;{{ post.title }}&rdquo;">{{ post.title }}</a>
         </h3>
                 <span class="post-meta">{{ post.client }}, {{ post.date | date: "%b.%Y" }}</span>
                 <div class="thumb">
-                    <img src="images/work/{{ post.slug }}/thumb.jpg" alt="Imagem do trabalho &ldquo;{{ post.title }}&rdquo;">
+                    <!-- <img src="images/work/{{ post.slug }}/thumb.jpg" alt="Imagem do trabalho &ldquo;{{ post.title }}&rdquo;"> -->
+                    <img src="http://lorempixel.com/1920/700/sports/" alt="Imagem do trabalho &ldquo;{{ post.title }}&rdquo;" class="u-max-full-width">
                 </div>
                 <div>
                     {{ post.content }}
                 </div>
                 <div class="tool">Ferramentas usadas: {{ post.tools }}.</div>
-            </li>
+            </article>
             {% endfor %}
         </ul>
     </article>

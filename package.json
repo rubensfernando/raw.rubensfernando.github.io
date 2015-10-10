@@ -2,13 +2,13 @@
   "name": "rubensfernando github",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rubensfernando/rubensfernando.github.io.git"
+    "url": "https://github.com/rubensfernando/raw.rubensfernando.github.io.git"
   },
   "keywords": [
     "site",
@@ -21,11 +21,10 @@
     "charts"
   ],
   "author": "Rubens Fernando Alencar",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rubensfernando/rubensfernando.github.io/issues"
+    "url": "https://github.com/rubensfernando/raw.rubensfernando.github.io/issues"
   },
-  "homepage": "https://github.com/rubensfernando/rubensfernando.github.io",
+  "homepage": "https://github.com/rubensfernando/raw.rubensfernando.github.io",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-concurrent": "^1.0.0",

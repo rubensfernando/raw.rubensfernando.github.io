@@ -1,10 +1,10 @@
 # Site settings
 title: Rubens Fernando
-tagline: 'Design, desenvolvedor e infografia'
+tagline: 'Design, desenvolvimento e infografia'
 email: ola@rubensfernando.com
 permantlink: /:categories/:title.html
 description: > # this means to ignore newlines until "baseurl:"
-  Sou designer e desenvolvedor no jornal Folha de S.Paulo, na editoria de Arte, desenvolvendo infográficos e outras histórias visuais.
+  Sou designer e desenvolvedor no jornal <a href='http://www.folha.com.br'>Folha de S.Paulo</a>, na editoria de Arte, desenvolvendo infográficos e outras histórias visuais.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rubensfernando.com" # the base hostname & protocol for your site
 twitter_username: rubensfernando
