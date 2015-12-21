@@ -985,6 +985,73 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-header {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+}
+.site-header a {
+  color: #fff;
+}
+.site-header a:hover {
+  color: #80a32b;
+}
+.site-header h1,
+.site-header h2 {
+  margin-bottom: 0;
+}
+.site-header h1 {
+  font-size: 22px;
+  color: #80a32b;
+}
+.site-header h1 a {
+  color: #80a32b;
+}
+.site-header h1 a:hover {
+  color: #fff;
+}
+.site-header .tagline {
+  font-size: 16px;
+}
+.site-header .title,
+.site-header .trigger {
+  float: left;
+}
+.site-header .title {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #999;
+}
+
+#work {
+  margin-top: 5em;
+}
+#work header {
+  margin-bottom: 1em;
+}
+#work header h2 {
+  margin-bottom: 0;
+}
+#work header .post-meta {
+  color: #555;
+}
+#work article {
+  border-bottom: solid 1px #eee;
+  padding: 50px 0px;
+}
+#work a {
+  color: #000;
+}
+#work a:hover {
+  color: #80a32b;
+}
+
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
