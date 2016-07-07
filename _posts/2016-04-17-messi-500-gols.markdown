@@ -1,0 +1,10 @@
+---
+layout: portfolio
+title:  "Messi, 500 gols"
+client: Folha de S.Paulo
+date:   2016-04-17 17:00:00
+categories: portfolio
+urlWork: "http://arte.folha.uol.com.br/esporte/2016/messi-500-gols/"
+tools: "HTML5, D3.JS"
+slug: 'messi-500-gols'
+---
