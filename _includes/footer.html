@@ -1,16 +1,16 @@
-<footer id="about-me" class="site-footer">
+<footer id="about-me" class="site-footer" itemscope itemtype="http://schema.org/Person">
     <div class="container">
         <div class="row">
             <div class="eight columns">
             <h3>Sobre mim</h3>
-                <p class="text">{{ site.description }}</p>
+                <p class="text" itemprop="description">{{ site.description }}</p>
                 <div class="colophon">
                     {% markdown colophon.md %}
                 </div>
                 {% include contact.html %}
             </div>
             <div class="four columns">
-                <img class="u-max-full-width" src="assets/images/image-profile.jpg" alt="Foto do Rubens Fernando">
+                <img class="u-max-full-width" src="assets/images/image-profile.jpg" alt="Foto do Rubens Fernando" itemprop="image">
             </div>
         </div>
     </div>
