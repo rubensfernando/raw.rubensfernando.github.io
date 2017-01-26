@@ -7,7 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Sou designer e desenvolvedor no jornal <a href='http://www.folha.com.br'>Folha de S.Paulo</a>, na editoria de Arte, desenvolvendo infográficos e outras histórias visuais.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rubensfernando.com" # the base hostname & protocol for your site
-twitter_username: rubensfernando
+twitter:
+  username: rubensfernando
 github_username:  rubensfernando
 linkedin_username:  rubensfernando
 lastfm_username: rubfernando
@@ -29,7 +30,17 @@ exclude: [
 # Move build
 destination: ../rubensfernando.github.io/
 
-# Portfolio plugin
-portfolio_root: /trabalhos
-portfolio_path: /assets/images/pages/trabalhos
-portfolio_img_root: /images/pages/trabalhos
+author: rubensfernando
+
+social:
+  name: Rubens Fernando Alencar
+  links:
+    - https://twitter.com/rubensfernando
+    - https://www.linkedin.com/in/rubensfernando
+    - https://plus.google.com/+rubensfernando
+    - https://github.com/rubensfernando
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
