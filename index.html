@@ -1,29 +1,5 @@
 ---
-layout: default
+layout: new
 ---
-<div class="home">
-    <article id="work">
-        <h3>Trabalhos</h3>
-        <ul class="post-list">
-            {% for post in site.categories.portfolio %}
-            <article>
-                <header>
-                    <h2>
-                      <a class="post-link" href="{{ post.urlWork }}" target="_blank" title="Clique para abrir o trabalho  &ldquo;{{ post.title }}&rdquo;">{{ post.title }}</a>
-                    </h2>
-                    <span class="post-meta">{{ post.client }}, {{ post.date | date: "%b.%Y" }}</span>
-                </header>
-                <div class="thumb">
-                    <a class="post-link" href="{{ post.urlWork }}" target="_blank" title="Clique para abrir o trabalho  &ldquo;{{ post.title }}&rdquo;"><img src="assets/images/works/{{ post.slug }}/thumb.jpg" alt="Imagem do trabalho &ldquo;{{ post.title }}&rdquo;" class="u-max-full-width"></a>
-                    <!-- <img src="http://lorempixel.com/1920/700/sports/" alt="Imagem do trabalho &ldquo;{{ post.title }}&rdquo;" class="u-max-full-width"> -->
-                </div>
-                <div>
-                    {{ post.content }}
-                </div>
-                <!-- <div class="tool">O que eu fiz: {{ post.did }}.</div> -->
-                <div class="tool">Ferramentas usadas: {{ post.tools }}.</div>
-            </article>
-            {% endfor %}
-        </ul>
-    </article>
-</div>
+
+Uhu

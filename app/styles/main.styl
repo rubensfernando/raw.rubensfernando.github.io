@@ -1,0 +1,218 @@
+@lost flexbox flex;
+
+color-pickled-bluewood = #2C3E50;
+color-hippie-blue = #4CA1AF;
+color-deep-blue = #0B2737;
+
+color-primary = color-pickled-bluewood;
+color-second = color-hippie-blue;
+color-nav = color-deep-blue;
+
+
+
+html
+	font-size 1em
+
+body
+	background-color white
+	font-family 'Fira Sans', sans-serif
+	font-weight 400
+	line-height 1.45
+	color #333
+
+p
+	margin-bottom 1.3em
+
+h1, h2, h3, h4
+	margin 1.414em 0 0.5em
+	font-weight inherit
+	line-height 1.2
+
+h1
+	margin-top 0
+	font-size 3.157em
+
+h2
+	font-size 2.369em
+
+h3
+	font-size 1.777em
+
+h4
+	font-size 1.333em
+
+small, .font_small
+	font-size 0.75em
+
+a
+	text-decoration: none
+
+.container
+	padding: 0 10px
+	lost-utility: clearfix
+	lost-center: 1320px
+
+.header
+	background: color-nav
+	background-blend-mode: multiply
+	padding: 10px 0
+	position: fixed
+	lost-column: 1/1
+	&__container
+		color: white
+
+.navbar-brand
+	color: white
+	font-size: 20px
+	span
+	font-weight: bold
+
+.hero
+	background color-primary
+	height: 550px
+	display: flex
+	flex-direction: column
+	+mobile()
+		height: 100vh
+	&__container
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100%
+		width: 100%
+	.aligner
+		width: 100%
+
+.headline
+	color: white
+	font-weight: bold
+	margin-bottom: 0
+
+.subHeadline
+	margin-top: 0
+	color: color-second
+
+
+.sidebar
+	position fixed
+	top 0
+	bottom 0
+	right -14rem
+	width 14rem
+	visibility hidden
+	overflow-y auto
+	font-family "PT Sans", Helvetica, Arial, sans-serif
+	font-size .875rem
+	color rgba(255,255,255,.6)
+	background-color #202020
+	transition all .3s ease-in-out
+	a
+		font-weight normal
+		color #fff
+
+@media (min-width: 30rem)
+	.sidebar
+		font-size .75rem
+
+.sidebar-item
+	padding 1rem
+	p
+		&:last-child
+			margin-bottom 0
+
+.sidebar-nav
+	border-bottom 1px solid rgba(255,255,255,.1)
+
+.sidebar-nav-item
+	display block
+	padding .5rem 1rem
+	border-top 1px solid rgba(255,255,255,.1)
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus
+	text-decoration none
+	background-color rgba(255,255,255,.1)
+	border-color transparent
+
+@media (min-width: 48rem)
+	.sidebar-item
+		padding 1.5rem
+	.sidebar-nav-item
+		padding-left 1.5rem
+		padding-right 1.5rem
+
+.sidebar-checkbox
+	display none
+
+.sidebar-toggle
+	position absolute
+	top 1rem
+	right 1rem
+	display block
+	width 2.2rem
+	padding .5rem .65rem
+	color #FFF
+	// background-color #fff
+	border-radius 4px
+	cursor pointer
+	&:before
+		display block
+		content ""
+		width 100%
+		padding-bottom .125rem
+		border-top .375rem double
+		border-bottom .125rem solid
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle
+	color #fff
+	background-color #505050
+
+@media (min-width: 30.1rem)
+	.sidebar-toggle
+		position fixed
+		width 2.25rem
+		&:before
+			padding-bottom .15rem
+			border-top-width .45rem
+			border-bottom-width .15rem
+
+.wrap,
+.sidebar,
+.sidebar-toggle
+	-webkit-backface-visibility hidden
+	-ms-backface-visibility hidden
+	backface-visibility hidden
+
+.wrap,
+.sidebar-toggle
+	-webkit-transition -webkit-transform .3s ease-in-out
+	transition transform .3s ease-in-out
+
+#sidebar-checkbox
+	&:checked
+		& + .sidebar
+			z-index: 10
+			visibility visible
+
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle
+	transform translateX(-14rem)
+
+#sidebar-checkbox:checked ~ .wrap
+	transform: translateX(0)
+
+#sidebar-checkbox:checked ~ .sidebar-toggle
+	box-shadow: 0 0 0 .25rem #fff
+
+#sidebar-checkbox:checked ~ .sidebar
+	box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1)
+
+.footer
+	.contact-form
+		lost-column: 1/2

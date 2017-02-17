@@ -1,5 +1,5 @@
 // Our variables
-$base-font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -17,6 +17,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 $green-color: #80a32b;
 $green-color-light: lighten($green-color, 40%);
 $green-color-dark:  darken($green-color, 25%);
+
+$color-1: #2C3E50;
+$color-2: #4CA1AF;
+$color-light: #fff;
 
 // Width of the content area
 $content-width: 800px;

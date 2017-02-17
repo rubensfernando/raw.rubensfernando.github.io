@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/jekyll,node,osx,ruby,sass
 
 ### Jekyll ###
@@ -131,7 +130,7 @@ build-iPhoneSimulator/
 
 ### Sass ###
 .sass-cache/
-*.css.map
+*.map
 _site
 .sass-cache
 node_modules

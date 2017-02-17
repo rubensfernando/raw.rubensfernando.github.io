@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"> {% seo %}
+		<link href="http://fonts.googleapis.com/css?family=Fira Sans" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+		<!--[if lt IE 8]>
+						<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+				<![endif]-->
+		<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+		<nav class="sidebar" id="sidebar">
+				<ul>
+						<li><a href="/" title="work">home</a></li>
+						<li><a href="/portfolio/" title="work">work</a></li>
+						<li><a href="/blog/" title="work">write</a></li>
+						<li><a href="career.html" title="work">career</a></li>
+				</ul>
+		</nav>
+		<!-- Add your site or application content here -->
+		<div class="wrap">
+				<header id="header" class="header">
+						<div class="container header__container">
+								<a class="navbar-brand" href="/">rubens<span>fernando</span></a>
+						</div>
+				</header>
+				<!-- /header -->
+				<div class="hero">
+						<div class="container hero__container">
+								<div class="aligner">
+										<h1 class="headline">Rubens Fernando</h1>
+										<h3 class="subHeadline">Data Visualization | Data & News Designer | Coder</h3>
+								</div>
+						</div>
+				</div>
+				<main class="content">
+						<div class="container">
+								{{content}}
+						</div>
+				</main>
+				<footer class="footer">
+						<div class="container">
+								<div class="contact-form">
+										<h4>Send a message</h4>
+										<form method="post" action="http://formspree.io/ola@rubensfernando.com">
+												<label>Your name
+														<input type="text" name="name" placeholder="Your name">
+												</label>
+												<label>Your e-mail
+														<input type="email" name="email" placeholder="Your email">
+												</label>
+												<label>Subject
+														<input type="text" name="subject" placeholder="Subject">
+												</label>
+												<label>Your message
+														<textarea name="message" placeholder="Your message"></textarea>
+												</label>
+												<button type="submit">Send</button>
+										</form>
+								</div>
+								<div class="social">
+										<h4>Rubens Fernando</h4>
+										<a href="mailto:ola@rubensfernado.com">ola[@]rubensfernado.com</a>
+								</div>
+						</div>
+				</footer>
+		</div>
+		<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+
+		</script>
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+		window.ga = function() {
+				ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
+
